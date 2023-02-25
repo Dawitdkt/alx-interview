@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""some doc """
 
 def validUTF8(data):
+    """method doc"""
     # Initialize a variable to store the number of bytes to process
     n_bytes = 0
 
