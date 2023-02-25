@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def validUTF8(data):
     # Initialize a variable to store the number of bytes to process
     n_bytes = 0
