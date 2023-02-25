@@ -22,7 +22,6 @@ def validUTF8(data):
                     break
                 n_bytes += 1
 
-            # If there are no 1s or more than 4 1s, it is not a valid UTF-8 character
             if n_bytes == 0:
                 continue
             elif n_bytes == 1 or n_bytes > 4:
@@ -31,7 +30,6 @@ def validUTF8(data):
         # If this is a subsequent byte
         else:
 
-            # Check if the first two bits are 10, otherwise it is not a valid UTF-8 character
             if not (bin_rep[0] == '1' and bin_rep[1] == '0'):
                 return False
 
