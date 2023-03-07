@@ -5,7 +5,7 @@ const movieId = process.argv[2];
 
 // Make a GET request to the Star Wars API films endpoint
 request(`https://swapi.dev/api/films/${movieId}`, (error, response, body) => {
-  if (error) {
+  if (error || movieId > 7) {
     console.error('Error:', error);
   } else if (response.statusCode !== 200) {
     console.error('Unexpected status code:', response.statusCode);
