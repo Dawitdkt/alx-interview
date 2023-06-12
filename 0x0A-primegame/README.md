@@ -1,0 +1,5 @@
+The isWinner function takes two arguments: x, the number of rounds to play, and nums, a list of n values for each round. It returns the name of the player that won the most rounds, or None if the winner cannot be determined.
+
+For each round, we generate a list of primes up to n using the get_primes function. We then simulate the game using a loop that alternates between players and removes the chosen prime and its multiples from the list of primes until there are no more primes left to choose. We determine the optimal move for each player using the get_optimal_move function, which returns the smallest prime for Maria and the prime that leaves the fewest primes for Maria for Ben. The remove_multiples function removes the multiples of a prime from a list of primes.
+
+Finally, we determine the winner for each round by switching the player and incrementing their win count in the wins dictionary. We return the name of the player that won the most rounds, or None if there is a tie.
